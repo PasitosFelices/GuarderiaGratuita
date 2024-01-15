@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+
+  
+  <!-- HTML -->
+ 
+
+  <!-- Custom Styles -->  
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,900&display=swap" rel="stylesheet">
+  
+  <style>
+    #header-background {
+      background-image:url("/Página Web/assets/2.png");
+      background-repeat: no-repeat; 
+      background-attachment: fixed; 
+      background-size: cover;
+      background-position: center bottom;
+    }
+    h3 {
+      color:#267f44;
+      font-weight: 600;
+    }
+    h2 {
+      font-weight: 800;
+      font-size: 2.5rem;
+    }
+    h1 {
+      font-size:4rem;
+    }
+    #heroText {
+      font-size: 1.5rem;
+    }
+    #quienesSomos {
+      background-color: #f1e572;
+
+    }
+    #servicesText {
+      color:#267f44;
+      font-size: 1.2rem;
+    }
+
+    #rabitImage {
+      margin-bottom: -45px;
+      position: relative;
+      z-index:-5;
+      max-width: 300px;
+      height:auto;
+    }
+    #footerBackground {
+      background-color: #1b167a;
+      background-image: url("/Página Web/assets/8.png");
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-size: cover;
+       background-position: center 6cm;
+       height: 90vh;
+    }
+  
+    footer {
+      color:white !important;
+    }
+    .featureImage {
+      border-radius:50%;
+      width:200px;
+      height:200px;
+      margin-bottom:20px;
+      object-fit: cover;
+    }
+    .galeria {
+      object-fit: cover;
+    }
+   </style>
+
+</head>
+
+<body>
+ <!--Nav bar-->
+<div id="header-background">
+<header class="d-flex justify-content-center py-3">
+  <ul class="nav nav-pills">
+    <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Inicio</a></li>
+    <li class="nav-item"><a href="#section-services" class="nav-link">Servicios</a></li>
+    <li class="nav-item"><a href="#section-acerca-de" class="nav-link">Acerca de</a></li>
+    <li class="nav-item"><a href="#section-galeria" class="nav-link">Galeria</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
+  </ul>
+</header>
+
+<!--HEROE-->
+<div class="px-4 py-5 my-4 text-center" style=color:#1b167a>
+  <img class="d-block mx-auto mb-2" src="/Página Web/assets/logo.png" alt="" width="100" height="100">
+  <h1 style="font-family: 'Poppins', sans-serif; font-weight: 900 ; ">Pasitos Felices</h1>
+  <h2 id="subheading">Guardería Gratuita</h2>
+  <div class="col-lg-6 mx-auto">
+    <p class="mb-4" id="heroText">Un espacio seguro y cálido con profesionales altamente capacitados. Recibimos pequeños desde los 43 días hasta los 4 años de edad.</p>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      <a type="button" class="btn btn-primary btn-lg px-4 gap-3" href="tel:3337927724">Llámanos</a>
+      <a type="button" class="btn btn-outline-primary btn-lg px-4" href="mailto:contactopasitosfelices@gmail.com?Subject=Informes%20Pasitos%20Felices">Haz una pregunta</a>
+    </div>
+  </div>
+</div>
+</div>
+<!--SERVICES-->
+<section id=section-services>
+<div class="my-5 p-5 mb-0 pb-0 text-start">
+  <div class="container py-5 pb-0 mb-0">
+    <h2>Servicios</h2>
+    <div class="container px-4 py-4" id="hanging-icons">
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3" id="servicesText">
+        <div class="grid">
+          <div class="row justify-content-left">
+            <img src="/Página Web/assets/strawberries in bowl.jpg" class="featureImage">
+          </div>
+          <div class="col d-flex align-items-left text-left">
+            <div>
+              <h3 class="fs-2">Comida incluida</h3>
+              <p>Alimentación sana, variada y suficiente todos los días.</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="row justify-content-left">
+            <img src="/Página Web/assets/blocks.webp" class="featureImage">
+          </div>
+          <div class="col d-flex align-items-left text-left">
+            <div>
+             <h3 class="fs-2">Programa pedagógico</h3>
+             <p>Programa educativo-formativo acorde a la edad y nivel de desarrollo de cada pequeño.</p>
+            </div>
+          </div>
+        </div> 
+        <div class="grid">
+          <div class="row justify-content-left">
+            <img src="/Página Web/assets/doctor heart.jpeg" class="featureImage">
+          </div>
+          <div class="col d-flex align-items-left text-left">
+            <div>
+              <h3 class="fs-2">Fomento a la salud</h3>
+              <p>Vigilamos y damos sguimiento al estado de salud.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      <div class="p-0 mb-0">
+        <img id="rabitImage" src="/Página Web/assets/luAndCarrot.png">
+      </div>
+</div>
+
+</section>
+  <!-- QUIENES SOMOS-->
+<section id="section-acerca-de">
+<div class="my-5 mt-0">
+  <div class="p-5 text-start" id="quienesSomos">
+    <div class="container py-5">
+      <h2 class="col-lg-8 mr-auto">¿Quiénes somos?</h2>
+      <p class=" text-start col-lg-8 mr-auto lead my-5">
+        Somos una guardería gratuita para papás y mamás trabajadores con seguro social. Ofrecemos un espacio seguro y cálido para que tus hijos se desenvuelvan bajo el excelente cuidado de nuestro personal calificado. Con asesoramiento nutricional, pedagógico, y psicológico, estamos al servicio de tus pequeños desde los 43 días de nacidos y hasta cumplir los 4 años.
+      </p>
+      <a type="button" class="btn btn-primary btn-lg" href="https://www.imss.gob.mx/servicios/guarderias">Conoce más acerca de las guarderías del IMSS</a>
+    </div>
+  </div>
+</div>
+</section>
+<!-- PICTURES-->
+<section id="section-galeria">
+<div class= "container px-4 py-5" id="album">
+  <h2 class="pb-2 border-bottom">Galería</h2>
+  <div class=container>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <img class="galeria" width="100%" height="225" src="/Página Web/assets/galeria/Imagen de WhatsApp 2023-10-11 a las 09.17.39_ce48182f.jpg">
+      </div>
+      <div class="col">
+        <img class="galeria" width="100%" height="225" src="/Página Web/assets/galeria/Imagen de WhatsApp 2023-10-11 a las 09.18.28_02eef9fe.jpg">
+      </div>
+      <div class="col">
+        <img class="galeria" width="100%" height="225" src="/Página Web/assets/galeria/colchones lactantes.jpg">
+      </div>
+      <div class="col">
+        <img class="galeria" width="100%" height="225" src="/Página Web/assets/galeria/Imagen de WhatsApp 2023-10-11 a las 09.19.15_fb5bd044.jpg">
+      </div>
+      <div class="col">
+        <img class="galeria" width="100%" height="225" src="/Página Web/assets/galeria/Piratas.jpg">
+      </div>
+      <div class="col">
+        <img class="galeria" width="100%" height="225" src="/Página Web/assets/Autubus lactantes.jpg">
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>   
+
+<!--FOOTER-->
+<div id="footerBackground">
+  <div class="container" style="background-color:#1b167a; z-index: -1">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="col-lg-4 col-md-6 mb-5">
+      <h5 class="text-body-secondary">Horarios de Atención</h5>
+      <div class="grid">
+        <div class="row">
+          <p class="col-4 mb-1 pb-0"> lunes </p>
+          <p class="col-auto mb-1 pb-0"> 7:00 - 17:30</p>
+        </div>
+        <div class="row">
+          <p class="col-4 mb-1 pb-0"> martes </p>
+          <p class="col-auto mb-0"> 7:00 - 17:30</p>
+        </div>
+        <div class="row">
+          <p class="col-4 mb-1 pb-0"> miércoles </p>
+          <p class="col-auto mb-1 pb-0"> 7:00 - 17:30</p>
+        </div>
+        <div class="row">
+          <p class="col-4 mb-1 pb-0"> jueves </p>
+          <p class="col-auto mb-0"> 7:00 - 17:30</p>
+        </div>
+        <div class="row">
+          <p class="col-4 mb-1 pb-0"> viernes </p>
+          <p class="col-auto mb-1 pb-0"> 7:00 - 17:30</p>
+        </div>
+        <div class="row">
+          <p class="col-4 mb-1 pb-0"> sabado </p>
+          <p class="col-auto mb-0">cerrado</p>
+        </div>
+        <div class="row">
+          <p class="col-4 mb-1 pb-0"> domingo </p>
+          <p class="col-auto mb-1 pb-0">cerrado</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-lg-4 col-md-6 mb-4 px-5">
+      <div class="row ">
+      <h5 class= "d-flex justify-content-center mb-2">Cómo llegar</h5>
+      </div>
+      <div class="row">
+      <a type="button" class="btn btn-dark my-2" href="https://maps.app.goo.gl/J8sFosgmw7pcubkG8">Google Maps</a>
+       </div>
+      <div class="row"> 
+        <div class="my-2 icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <svg class="bi" width="2em" height="2.em" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path fill="#343a40" d="M440-42v-80q-125-14-214.5-103.5T122-440H42v-80h80q14-125 103.5-214.5T440-838v-80h80v80q125 14 214.5 103.5T838-520h80v80h-80q-14 125-103.5 214.5T520-122v80h-80Zm40-158q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Zm0-120q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm0-80q33 0 56.5-23.5T560-480q0-33-23.5-56.5T480-560q-33 0-56.5 23.5T400-480q0 33 23.5 56.5T480-400Zm0-80Z"/></svg>
+        </div>
+      </div>
+      <div class="row">
+        <p class="text-center mb-2">Av. Matatlán 890. CP #45400 Tonalá, Jalisco.</p>
+       </div>
+    </div>
+
+    <div class="col-lg-4 col-sm-9 col-md-8 mb-3 ml-2 pl-2 px-5">
+      <h5>Contacto</h5></br>
+        <h5>Teléfono: 33 3792 7724</h5></br>
+        <h5 class="text-break">Email: contactopasitosfelices@gmail.com</h5>
+      </ul>
+    </div>
+
+  </footer>
+  </div>
+  
+</div>
+  <script src="main.js"></script>
+</body>
+</html>
